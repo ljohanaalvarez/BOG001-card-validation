@@ -6,14 +6,24 @@ height: 180px;
 }
 .product{
     display:flex;
-    padding-left: 35%;
+    padding-left: 10%;
+}
+.name-product{
+    padding-top: 80px;
 }
 .pre-order{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 .container{
-    border: 2px 2px black;
-    border-style: groove;
-    border-left: -100px;
-    border-right: -100px;
+    border: 5px outset black;
+    margin-right: 500px;
+    margin-left: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.total{
+    margin-left: 65%;
+}
+.buy-car{
+    margin-left: 33%;
 }
