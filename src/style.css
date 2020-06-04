@@ -1,29 +1,106 @@
-* {padding:0;
-margin: 0;}
-img{
-    width: 180px;
-height: 180px;
+* {
+    padding:0;
+    margin: 0;
 }
+
+body{
+    background-color: rgb(250, 245, 245);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+/*ESTILOS CARRITO DE COMPRA*/
+img{
+    width: 80px;
+    height: 80px;
+}
+
 .product{
     display:flex;
-    padding-left: 10%;
+    padding-left: 5%;
+    
+    
 }
-.name-product{
-    padding-top: 80px;
+
+div > p {
+   font-size: 18px;
+   padding-top: 2px;
+   font-family: cursive;
 }
+
 .pre-order{
-    padding-top: 1%;
+    padding-top: 5%;
 }
 .container{
     border: 5px outset black;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-right: 300px;
+    margin-left: 300px;
     padding-top: 40px;
     padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: double;
 }
 .total{
-    margin-left: 65%;
+    margin-left: 75%;
 }
-.buy-car{
-    margin-left: 33%;
+.buy-car {
+    margin-left: 23%;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*ESTILOS METODO DE PAGO*/
+.card-validation{
+    margin-top: 5%;
+}
+
+.pay{
+    margin-left: 23%;
+    font-family: 'Architects Daughter', cursive;
+}
+.conten-card{
+    border: 5px outset black;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: double;
+}
+
+form > label{
+    font-family: cursive;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.card-validation input[type="number"]{
+    outline: none;
+    width: 50%;
+    padding: 10px 5px;
+    margin: 0 0 0 40px;
+    background: rgba(233, 227, 227, 0.5);
+    color: rgb(70, 65, 65);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+
+.card-validation input[type="submit"]{
+    outline: none;
+    width: 10%;
+    margin: 0 0 0 10px;
+    background: rgba(51, 50, 50, 0.5);
+    color: #ff851b;
+    border: none;
+    border-radius: 2px;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight:normal; 
+    transition: all .5s ease;
 }

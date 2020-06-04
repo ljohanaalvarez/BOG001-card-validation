@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tarjeta de crédito válida</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,41 +15,42 @@
   <main>
     <section class="pre-order">
       <h1 class="buy-car">Tu Carrito de Compras</h1>
-      <div class= "container">
-      <div class="product">
-        <img src="./Imágenes/farsali.jpeg" alt="Farsali">
-        <div>
-          <p class="name-product">Serum Farsali</p>
-          <p class="price">$ 65.000</p>
+      <div class="container">
+        <div class="product">
+          <img src="./Imágenes/farsali.jpeg" alt="Farsali">
+          <div>
+            <p class="name-product">Serum Farsali</p>
+            <p class="price">$ 65.000</p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <img src="./Imágenes/pomys 1.jpeg" alt="Beauty Blender
-        ">
-        <div>
-          <p class="name-product">Beauty Blender</p>
-          <p class="price">$30.000</p>
+       
+        <div class="product">
+          <img src="./Imágenes/pomys 1.jpeg" alt="Beauty Blender">
+          <div>
+            <p class="name-product">Beauty Blender</p>
+            <p class="price">$30.000</p>
+          </div>
         </div>
-      </div>
-      <div class="product">
-        <img src="./Imágenes/perfume (1).jpeg" alt="
+      
+        <div class="product">
+          <img src="./Imágenes/perfume (1).jpeg" alt="
         Parfum Passion Rose">
-        <div>
-          <p class="name-product">Parfum Passion Rose</p>
-          <p class="price">$120.000</p>
+          <div>
+            <p class="name-product">Parfum Passion Rose</p>
+            <p class="price">$120.000</p>
+          </div>
         </div>
+    
+        <h3 class="total">TOTAL: $215.000</h3>
       </div>
-      <h3 class="total">TOTAL: $215.000</h3>
-    </div>
     </section>
     <section class="card-validation">
       <h1 class="pay">Método de pago</h1>
-      <div>
-        <label for="">Número de tarjeta</label>
-        <input type="number" name="number-card" id="card">
-        <button>→
-        </button>
-      </div>
+      <form class="conten-card" action="#">
+        <label for="">Número de tarjeta</label><br>
+        <input type="number" name="number-card" id="card" placeholder="Ingresa el numero" required>
+        <input type="submit" onclick="validateCard()" value=">">
+      </form>
     </section>
     <section class="personal-data"></section>
   </main>
