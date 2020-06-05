@@ -91,7 +91,7 @@ form > label{
 }
 
 
-.card-validation input[type="submit"]{
+.card-validation input[type="button"]{
     outline: none;
     width: 10%;
     margin: 0 0 0 10px;
