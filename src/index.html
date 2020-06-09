@@ -48,14 +48,15 @@
       <h1 class="pay">Método de pago</h1>
       <form class="conten-card" action="#">
         <label for="">Número de tarjeta</label><br>
-        <input type="number" name="number-card" id="card" placeholder="Ingresa el numero" required>
-        <input type="submit" onclick="validateCard()" value=">">
+        <input type="number" name="number-card" id="card" placeholder="Ingresa el numero" required maxlength="10">
+        <input type="button" value=">" id ="button">
       </form>
     </section>
     <section class="personal-data"></section>
   </main>
   <footer></footer>
   <script src="index.js" type="module"></script>
+  <script src="validator.js" type="module"></script>
 </body>
 
 </html>
