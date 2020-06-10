@@ -31,20 +31,51 @@ btnValidate.onclick = function(){
     for (let i=0; i < num.length; i++) {
 
         const entero= parseInt(num[i]);
-        arrayNCard.push(entero*2);
+        arrayNCard.push(entero);
         
-        if(espar(i)){
+        if(espar(i) == true){
             
+            let multiplicar = arrayNCard[i]*2;
+
+            if (multiplicar > 9){
+
+                let cifra = multiplicar -9;
+                
+                arrayNCard.pop(i);
+                arrayNCard.push(cifra);
+                
+            }else{
+                arrayNCard.pop(i);
+                arrayNCard.push(multiplicar);
+            }
+           
+        }else {
+            let multiplicar = arrayNCard[i]*1;
         }
 
        }
-    
-       console.log(arrayNCard);
+      console.log(arrayNCard);
 
+      let suma = arrayNCard.reduce(sum);
+      console.log(suma);
+    
+    if (suma % 10 == 0){
+        prompt ("Tu tarjeta es Valida")
+    }else{
+        prompt ("Tarjeta Invalida, intente nuevamente")
+    }
 }
 
 function espar(i){
-    if (i);
-    return true;
+    if (i % 2 != 0){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+
+function sum(total,num){
+    return total + num;
 }
 
