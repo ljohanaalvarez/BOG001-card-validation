@@ -1,5 +1,15 @@
 import validator from './validator.js';
+let numberCard = document.getElementById("card");
+// Obteniendo Id para agregar evento que llame funcion
+let btnValidate = document.getElementById("button");
+btnValidate.addEventListener("click",getNumberCard);
+// función capturar el dato del input en reversa
+function getNumberCard(){
+    let nCard = numberCard.value;
+    let nCardNumber = Array.from(nCard);
+    nCardNumber.reverse();
 
+<<<<<<< HEAD
 console.log(validator);
 
 let numberCard = document.getElementById("card");
@@ -80,3 +90,7 @@ function sum(total,num){
     console.log(nCardNumber);
 }
   
+=======
+    console.log(nCardNumber);
+    
+>>>>>>> 2b7fcc7... js
