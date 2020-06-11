@@ -9,6 +9,7 @@ function getNumberCard(){
     let nCardNumber = Array.from(nCard);
     nCardNumber.reverse();
 
+<<<<<<< HEAD
 console.log(validator);
 
 let numberCard = document.getElementById("card");
@@ -89,3 +90,10 @@ function sum(total,num){
     console.log(nCardNumber);
 }
   
+<<<<<<< HEAD
+=======
+=======
+    console.log(nCardNumber);
+    
+>>>>>>> 2b7fcc70c447e751898e727c4743068d8c7f4a97
+>>>>>>> d5fd382ce233632f041b8f0ec06cf96486346a78
