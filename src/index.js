@@ -5,7 +5,6 @@ console.log(validator);
 let numberCard = document.getElementById("card");
 let btnValidate = document.getElementById ("vCard");
 
-
 btnValidate.onclick = function(){
 
     let nCard= numberCard.value;
@@ -27,6 +26,7 @@ btnValidate.onclick = function(){
         }
         
     } */
+
     let arrayNCard = [];
     for (let i=0; i < num.length; i++) {
 
@@ -77,5 +77,6 @@ function espar(i){
 
 function sum(total,num){
     return total + num;
+    console.log(nCardNumber);
 }
-
+  
