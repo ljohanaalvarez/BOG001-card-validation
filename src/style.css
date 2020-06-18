@@ -1,24 +1,121 @@
 * {
     padding:0;
     margin: 0;
+    }
+main{
+        background-color:white;
+    }
+header img{
+    width: 1980px;
+    height: 550px;
+}
+header ul{
+    background-color:slateblue;
+    display: flex;
+    list-style:none;
+    margin-top:-5px;
+    }
+header ul li{
+    padding:20px;
+    color: whitesmoke;
+    flex-grow: 1;
+    text-align: center;
+}
+header ul li:hover{
+    background-color: rgba(218, 8, 137, 0.425);
+}
+.circle {
+    width: 260px;
+    height: 260px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: slateblue;
+    position: absolute;
+    top:410px;
+    right: 41%;
 }
 
+header ul li img{
+    width:190px;
+    height:190px ;
+    position: absolute;
+    top:420px;
+    left:720px;
+}
 body{
     background-color: rgb(250, 245, 245);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;    
+}
+
+.container0{
+    border: 5px outset black;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: double;
+}
+
+.line1products{
+    display: flex;
+    justify-content: space-around;
+        
+}
+.line2products{
+    display: flex;
+    justify-content: space-around;
+        
+}
+
+.line1buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.line2buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.shopproduct{
+    padding: 40px;
+    border:0;
+    display: flex;
+    justify-content: space-evenly;
     
 }
-/*ESTILOS CARRITO DE COMPRA*/
+.shopproduct2{
+    padding: 40px;
+    border:0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.name-product-shop{
+    padding-top: 73%;
+}
+
 img{
-    width: 80px;
-    height: 80px;
+    width: 250px;
+    height: 250px;  
+}
+   
+}
+
+
+/*ESTILOS CARRITO DE COMPRA*/
+#imgsecond{
+    width: 100px;
+    height: 100px;
 }
 
 .product{
-    display:flex;
-    padding-left: 5%;
     
+    padding-left: 5%;
+    display: flex; 
     
 }
 
@@ -30,12 +127,12 @@ div > p {
 
 .pre-order{
     padding-top: 5%;
-}
+    }
+
 .container{
     border: 5px outset black;
     margin-right: 300px;
     margin-left: 300px;
-    padding-top: 40px;
     padding-bottom: 40px;
     border-radius: 20px;
     border-style: double;
@@ -103,4 +200,33 @@ form > label{
     font-size: 30px;
     font-weight:normal; 
     transition: all .5s ease;
+}
+footer{
+    background: url(./Imágenes/footer\ png.png);
+    width: 1980px;
+    height: 250px;
+}
+
+main{
+    padding-bottom: 60px;
+    padding-top: 80px;
+}
+
+/*aplicando estilos footer*/
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-around;
+}
+.red{
+    padding-top: 50px;
+    width: 80px;
+    height: 80px;
 }

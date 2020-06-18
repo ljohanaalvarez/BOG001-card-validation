@@ -1,29 +1,33 @@
 import validator from './validator.js';
-let numberCard = document.getElementById("card");
-// Obteniendo Id para agregar evento que llame funcion
-let btnValidate = document.getElementById("button");
-btnValidate.addEventListener("click",getNumberCard);
-// función capturar el dato del input en reversa
-function getNumberCard(){
-    let nCard = numberCard.value;
-    let nCardNumber = Array.from(nCard);
-    nCardNumber.reverse();
 
-<<<<<<< HEAD
-console.log(validator);
+console.log(validator)
 
+let buttonBuy = document.querySelector(".buttonBuy");
 let numberCard = document.getElementById("card");
 let btnValidate = document.getElementById ("vCard");
+document.getElementById("shop").style.display="block";
+document.getElementById("pre-order").style.display="none";
 
-btnValidate.onclick = function(){
+buttonBuy.onclick= mostrar => {
+    document.getElementById("shop").style.display="none";
+    document.getElementById("pre-order").style.display="block";
+}
+
+btnValidate.onclick= getNumber => {
 
     let nCard= numberCard.value;
 
     let num = Array.from(nCard);
-    num.reverse();
-   
-    console.log(num);
     
+    let result=validator.isValid(num);
+    console.log(result);
+
+    let mask=validator.maskify(nCard);
+    console.log(mask);
+}
+
+
+   
     /* otra forma de hacer entero un numero dentro de de un array
     let multipleNumbers = num;
     let multipleNumbers2 = multipleNumbers.map(multiple);
@@ -37,63 +41,3 @@ btnValidate.onclick = function(){
         
     } */
 
-    let arrayNCard = [];
-    for (let i=0; i < num.length; i++) {
-
-        const entero= parseInt(num[i]);
-        arrayNCard.push(entero);
-        
-        if(espar(i) == true){
-            
-            let multiplicar = arrayNCard[i]*2;
-
-            if (multiplicar > 9){
-
-                let cifra = multiplicar -9;
-                
-                arrayNCard.pop(i);
-                arrayNCard.push(cifra);
-                
-            }else{
-                arrayNCard.pop(i);
-                arrayNCard.push(multiplicar);
-            }
-           
-        }else {
-            let multiplicar = arrayNCard[i]*1;
-        }
-
-       }
-      console.log(arrayNCard);
-
-      let suma = arrayNCard.reduce(sum);
-      console.log(suma);
-    
-    if (suma % 10 == 0){
-        prompt ("Tu tarjeta es Valida")
-    }else{
-        prompt ("Tarjeta Invalida, intente nuevamente")
-    }
-}
-
-function espar(i){
-    if (i % 2 != 0){
-        return true;
-    }else{
-        return false;
-    }
-    
-}
-
-function sum(total,num){
-    return total + num;
-    console.log(nCardNumber);
-}
-  
-<<<<<<< HEAD
-=======
-=======
-    console.log(nCardNumber);
-    
->>>>>>> 2b7fcc70c447e751898e727c4743068d8c7f4a97
->>>>>>> d5fd382ce233632f041b8f0ec06cf96486346a78

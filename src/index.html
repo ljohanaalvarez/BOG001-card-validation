@@ -11,60 +11,156 @@
 </head>
 
 <body>
-  <header></header>
+
+  <header>
+    <img src="./Imágenes/banner.png">
+    <div class=circle></div>
+    <ul>
+      <li>INICIO</li>
+      <li>NUESTROS PRODUCTOS</li>
+      <li><img src="./Imágenes/logo E-commerce.png"></li>
+      <li>OFERTAS</li>
+      <li>CONTÁCTENOS</li>
+    </ul>
+  </header>
+
   <main>
-  <section class="pre-order">
+<section class="shop" id="shop">
+  <div class="container0" id="container0">
+    <div class = "line1products">       
+
+      <div class="shopproduct"><img src="./Imágenes/esmaltes.png" alt=""><div>
+          <p class="name-product-shop">Fantasy Enamels</p>
+          <p class="price-product-shop">$ 25.000</p>
+        </div>
+      </div>
+
+      <div class="shopproduct"><img src="./Imágenes/farsali.png" alt=""><div>
+          <p class="name-product-shop">Serum Farsali</p>
+          <p class="price-product-shop">$ 65.000</p>
+        </div>
+      </div>
+
+      <div class="shopproduct"><img src="./Imágenes/kit maquillaje.png" alt=""><div>
+          <p class="name-product-shop">Makeup Kit</p>
+          <p class="price-product-shop">$ 85.000</p>
+        </div>
+      </div>
+
+      <div class="shopproduct"><img src="./Imágenes/labial png.png" alt=""><div>
+          <p class="name-product-shop">Chanel Lipstick</p>
+          <p class="price-product-shop">$ 35.000</p>
+        </div>
+      </div>
+     </div>
+      
+    <div class= "line1buttons">
+      <input type= "button" value= "Añadir >" class="buttonBuy" id="probar" >
+      <input type= "button" value= "Añadir >" class="buttonBuy" >
+      <input type= "button" value= "Añadir >" class="buttonBuy" >
+      <input type= "button" value= "Añadir >" class="buttonBuy" >
+    </div>     
+
+    <div class= "line2products">
+
+      <div class= "shopproduct2"><img src="./Imágenes/perfume.png" alt=""><div>
+          <p class="name-product-shop">Passion Rose</p>
+          <p>$ 120.000</p>
+        </div>
+      </div>
+
+     <div class= "shopproduct2"><img src="./Imágenes/perlas polvo facial.png" alt=""><div>
+        <p class="name-product-shop">Pearl Facial</p>
+        <p>$ 35.000</p>
+      </div>
+     </div>
+
+      <div class= "shopproduct2"><img src="./Imágenes/pomys.png" alt=""><div>
+          <p class="name-product-shop">Beauty Blender</p>
+          <p>$ 30.000</p>
+        </div>
+      </div>
+
+      <div class= "shopproduct2"><img src="./Imágenes/sombra para ojos.png" alt="">
+        <div>
+          <p class="name-product-shop">Shadow Eyes</p>
+          <p>$ 35.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class= "line2buttons">
+      <input type= "button" value= "Añadir >" class= "buttonBuy2">
+      <input type= "button" value= "Añadir >" class= "buttonBuy2">
+      <input type= "button" value= "Añadir >" class= "buttonBuy2">
+      <input type= "button" value= "Añadir >" class= "buttonBuy2">
+    </div>     
+  </div>
+</section> 
+
+  <div id="pre-order">
+    <section class="pre-order"></section> 
       <h1 class="buy-car">Tu Carrito de Compras</h1>
+     
       <div class="container">
+
         <div class="product">
-          <img src="./Imágenes/farsali.jpeg" alt="Farsali">
+          <img src="./Imágenes/farsali.png" alt="Farsali" id="imgsecond">
           <div>
             <p class="name-product">Serum Farsali</p>
             <p class="price">$ 65.000</p>
           </div>
         </div>
-       
+
         <div class="product">
-          <img src="./Imágenes/pomys 1.jpeg" alt="Beauty Blender">
+          <img src="./Imágenes/pomys.png" alt="Beauty Blender" id="imgsecond">
           <div>
             <p class="name-product">Beauty Blender</p>
             <p class="price">$30.000</p>
           </div>
         </div>
-      
+     
+
         <div class="product">
-          <img src="./Imágenes/perfume (1).jpeg" alt="
-        Parfum Passion Rose">
+          <img src="./Imágenes/perfume.png" alt="Parfum Passion Rose" id="imgsecond">
           <div>
             <p class="name-product">Parfum Passion Rose</p>
             <p class="price">$120.000</p>
           </div>
         </div>
-    
+
         <h3 class="total">TOTAL: $215.000</h3>
-      </div>
     </section>
+  </div>
+
     <section class="card-validation">
       <h1 class="pay">Método de pago</h1>
+
       <form class="conten-card">
         <label for="">Número de tarjeta</label><br>
-<<<<<<< HEAD
         <input type="number" name="number-card" id="card" placeholder="Ingresa el numero" required>
-        <input type="button" value=">" id="vCard">
-        
-=======
-        <input type="number" name="number-card" id="card" placeholder="Ingresa el numero" required maxlength="10">
-        <input type="button" value=">" id ="button">
-<<<<<<< HEAD
->>>>>>> 2b7fcc7... js
-=======
->>>>>>> 2b7fcc70c447e751898e727c4743068d8c7f4a97
->>>>>>> d5fd382ce233632f041b8f0ec06cf96486346a78
+        <input type="button" value=">" id ="vCard">
       </form>
+
     </section>
-    <section class="personal-data"></section>
   </main>
-  <footer></footer>
+
+  <footer>
+    <div class="content-footer">
+
+      <div class="redes-sociales">
+        <a href=""><img src="./Imágenes/facebook.png" alt="" class="red"></a>
+        <a href=""><img src="./Imágenes/instagram.png" alt="" class="red"></a>
+        <a href=""><img src="./Imágenes/twitter.png" alt="" class="red"></a>
+        <a href=""><img src="./Imágenes/whatsapp.png" alt="" class="red"></a>
+      </div>
+
+      <div class="copyright">
+        © 2020 - Diana&Johana - Todos los derechos reservados 
+      </div>
+      
+    </div>
+  </footer>
   <script src="index.js" type="module"></script>
   <script src="validator.js" type="module"></script>
 </body>
