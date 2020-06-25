@@ -1,0 +1,438 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+/*ESTILOS HEADER*/
+header img{
+    width: 1980px;
+    height: 500px;
+}
+
+header ul{
+    background-color: slateblue;
+    display: flex;
+    list-style: none;
+    margin-top: -5px;
+    justify-content: center;
+}
+
+header ul li{
+    padding: 20px;
+    color: whitesmoke;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header ul li:hover{
+    background-color: rgba(172, 99, 172, 0.384);
+    color: rgb(229, 255, 0);
+}
+
+header ul li img{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top: 420px;
+    left: 700px;
+}
+
+.circle{
+    position: absolute;
+    top: 410px;
+    left: 670px;
+    width: 240px;
+    height: 240px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: slateblue;
+   }
+
+main{
+    background: url("./Imágenes/fondo2.jpg");
+    background-size: cover;
+    padding-bottom: 60px;
+    
+}
+
+/*ESTILOS SHOP-PLACE*/
+
+.shop{
+    padding-top: 10%;
+   
+}
+
+.conteiner-shop{
+    background: white;
+    border: 5px black;
+    margin-right: 250px;
+    margin-left: 250px;
+    border-radius: 20px;
+    border-style: double;  
+    width: 70%;
+    padding-bottom: 5%;
+}
+
+.button-buy {
+    width: 33%;
+    padding-left: 40%;
+}
+
+.cont{
+    width: 30%;
+    display: inline-block;
+}
+
+.btnBuy{
+    background: url(./Imágenes/2.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-position:center;
+    background-size: 50px;
+    border: 0 solid rgba(9, 113, 163, 1);
+    border-radius: 3px;
+}
+
+.product-shop{
+    padding: 20%;
+    float: left;
+    width: 23%;
+    display: flex;  
+    padding-bottom: 0;  
+}
+
+.product-shop > img {
+    width: 150px;
+    height: 150px;
+}
+
+/*ESTILOS CARRITO DE COMPRA*/
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.product{
+    display:flex;
+    padding-left: 5%;    
+}
+
+div > p {
+   font-size: 18px;
+   padding-top: 2px;
+   font-family: cursive;
+}
+
+.pre-order{
+    padding-top: 10%;
+}
+.container{
+    border: 5px outset black;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: double;
+    background: white;
+}
+.total{
+    margin-left: 75%;
+}
+.buy-car {
+    margin-left: 23%;
+    font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*ESTILOS METODO DE PAGO*/
+.contenedor{
+    margin-top: 5%;
+    }
+
+.pay{
+    margin-left: 23%;
+    font-family: 'Architects Daughter', cursive;
+}
+.conten-card{
+    border: 5px outset black;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: double;
+    display: flex;
+    background: white;
+}
+
+div > label{
+    font-family: cursive;
+    font-size: 18px;
+    padding-left: 8%;
+
+    }
+.card-validation{
+    width: 50%;
+}
+
+.card-validation input[type="number"],[type="text"]{
+    outline: none;
+    width: 70%;
+    padding: 10px 5px;
+    margin: 0 0 0 30px;
+    background: rgba(175, 124, 124, 0.5);
+    color: rgb(70, 65, 65);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+    
+}
+
+.card-validation input[type="button"]{
+    outline: none;
+    width: 5%;
+    margin: 0 0 0 5px;
+    background: rgba(51, 50, 50, 0.5);
+    color: #ff851b;
+    border: none;
+    border-radius: 2px;
+    font-family: cursive;
+    font-size: 30px;
+    border-bottom: 10px solid rgba(51, 50, 50, 0.5);
+    font-weight:normal; 
+    transition: all .5s ease;
+}
+
+.card-validation input[id="inputCCV"]{
+    outline: none;
+    width: 20%;
+    padding: 10px 5px;
+    margin: 0 0 0 30px;
+    background: rgba(175, 124, 124, 0.5);
+    color: rgb(70, 65, 65);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.grupo-select{
+    width: 100%;
+    margin-left: 30px;
+    max-width: 50px;
+}
+
+
+.flexbox{
+    display: inline-flex;
+    width: 100%;
+    float: left;
+
+}
+
+.card-validation .expira{
+    width: 100%;
+}
+.ccv{
+    min-width: 100px;
+}
+
+.anuncio{
+    color: rgb(24, 21, 199);
+    text-align: center;
+    margin-left: -50px;
+    padding-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    transition: linear 0.5 ease;
+}
+
+div > span {
+    color: darkmagenta;   
+}
+
+/*ESTILOS DIBUJO TARJETA*/
+
+.tarjeta {
+	width: 100%;
+	max-width: 300px;
+    position: relative;
+    color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+/* ---------- Tarjeta Delantera ----------*/
+
+.tarjeta .delantera {
+	width: 100%;
+	background: url(./Imágenes/bg-tarjeta/bg-tarjeta-02.jpg);
+	background-size: cover;
+}
+
+.delantera .logo-marca {
+	text-align: right;
+	min-height: 30px;
+}
+
+.delantera .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 40px;
+}
+
+.delantera .chip {
+	width: 100%;
+	max-width: 43px;
+    margin-bottom: 10px;
+    max-height: 50px;
+}
+
+.delantera .grupo .label {
+	font-size: 10px;
+	color: #7d8994;
+	margin-bottom: 3px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+    font-size: 15px;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+	background: url(./Imágenes/bg-tarjeta/bg-tarjeta-02.jpg)
+	background-size: cover;
+	position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    min-width:    300px;
+}
+
+.trasera .barra-magnetica {
+	height: 50px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+.trasera .datos {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trasera .datos p {
+	margin-bottom: 8px;
+}
+
+.trasera .datos #firma {
+    width: 70%;
+    max-width: 70%;
+}
+
+.trasera .datos #firma .firma {
+	height: 48px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+
+.trasera .datos #firma .firma p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 25px;
+	padding: 0 30px;
+	text-transform: capitalize;
+}
+
+.trasera .datos #ccv {
+    width: 80px;
+    
+}
+
+.trasera .datos #ccv .ccv {
+	background: #fff;
+    color: #000;
+	padding-top: 23px;
+    text-align: center;
+    min-height: 25px;
+}
+
+.trasera .leyenda {
+	font-size: 10px;
+    line-height: 23px;
+    text-transform: lowercase;
+}
+
+.trasera .link-banco {
+	font-size: 16px;
+    color: #fff;
+    text-transform: lowercase;
+}
+
+/*ESTILOS FOOTER*/
+footer{
+    background: url(./Imágenes/footer\ png.png);
+    width: 1980px;
+    height: 250px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: floralwhite;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-around;
+}
+.red{
+    padding-top: 50px;
+    width: 80px;
+    height: 80px;
+}
