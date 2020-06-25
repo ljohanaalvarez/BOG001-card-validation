@@ -1,40 +1,22 @@
-# Tarjeta de crédito válida
+# Tarjeta de crédito válida PAYGO
 
-## Índice
+## Resúmen
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+Éste proyecto consta de una pasarela de pago "PAYGO", que será implementada en un e-commerce, en éste caso una tienda de artículos de belleza.
 
 ***
 
-## 1. Preámbulo
+## Investigación UX
+1. Usuarios.
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+El usuario final de éste producto es el comprador online, el cual requiere hacer una compra rápida y segura.
+El cliente es el e-commerce, el cual requiere ofrecer a sus compradores facilidad de pago por medio de una terjéta de crédito.
 
-Pasos del algoritmo:
-- Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9])
-- A todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado
-- El número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+2. Solución de las necesidades.
 
-## 2. Resumen del proyecto
+Este producto ofrece al usuario final una compra rápida al pedir los datos de validación de forma concreta y solo pedirá los datos complementarios si la tarjeta es válida, para que el comprador no tenga que volver a ingresar una cantidad de datos en caso de no hacer sido válida la tarjeta.
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+En cuanto al cliente (E-commerce), éste producto permite que se pueda ofrecer la compra con una facilidad de pago, y generando confianza en su usuario al realizarse una validación completa con datos de verificación.
 
 ## 3. Objetivos de aprendizaje
 
