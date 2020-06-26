@@ -1,5 +1,4 @@
 const validator = {
-<<<<<<< HEAD
 
     isValid: num => {
 
@@ -66,17 +65,3 @@ const validator = {
 }
 
 export default validator;
-=======
-<<<<<<< HEAD
-    
-  };
-  
-  export default validator;
-=======
-  // ...np
-};
-
-export default validator;
-
->>>>>>> 2b7fcc7... js
->>>>>>> e47f876... js
