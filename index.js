@@ -1,22 +1,6 @@
-  
 import validator from './validator.js';
-let numberCard = document.getElementById("card");
-// Obteniendo Id para agregar evento que llame funcion
-let btnValidate = document.getElementById("button");
-btnValidate.addEventListener("click",getNumberCard);
-// función capturar el dato del input en reversa
-function getNumberCard(){
-    let nCard = numberCard.value;
-    let nCardNumber = Array.from(nCard);
-    nCardNumber.reverse();
 
-<<<<<<< HEAD
 let btnBuy = document.getElementsByClassName("btnBuy");
-=======
-<<<<<<< HEAD
-console.log(validator);
-
->>>>>>> e47f876... js
 let numberCard = document.getElementById("card");
 let btnValidate = document.getElementById ("vCard");
 const card = document.querySelector('#tarjeta');
@@ -78,7 +62,7 @@ formulario.card.addEventListener("keyup", (e) =>{
     formulario.card.value = inputValue;
     
 
-    numeroTarjeta.textContent = inputValue;
+   /*numeroTarjeta.textContent = inputValue;*/
     
     if (inputValue == ""){
         numeroTarjeta.textContent = "#### #### #### ####";
@@ -136,6 +120,7 @@ btnValidate.onclick = function(){
     let mask=validator.maskify(nCard);
     
     if (result == true){
+        document.querySelector(".numero").textContent= mask;
         document.getElementById("nameCard").style.display ="block";
         document.getElementById("dateCard").style.display ="block";
         document.getElementById("invalid").style.display ="none";
@@ -145,19 +130,21 @@ btnValidate.onclick = function(){
         document.getElementById("nameCard").style.display ="none";
         document.getElementById("dateCard").style.display ="none";
     }
-<<<<<<< HEAD
-}
-=======
-    
 }
 
-function sum(total,num){
-    return total + num;
-    console.log(nCardNumber);
-}
-  
-=======
-    console.log(nCardNumber);
+
+   
+/* otra forma de hacer entero un numero dentro de de un array
+    let multipleNumbers = num;
+    let multipleNumbers2 = multipleNumbers.map(multiple);
     
->>>>>>> 2b7fcc7... js
->>>>>>> e47f876... js
+    console.log(multipleNumbers2);
+
+    function multiple (value, index, array){
+        for (let index=0; index > array.lenght; index ++){
+            return parseInt(value);
+        }
+        
+} */
+
+
