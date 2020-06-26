@@ -4,6 +4,8 @@
 
 Éste proyecto consta de una pasarela de pago "PAYGO", que será implementada en un e-commerce, en éste caso una tienda de artículos de belleza.
 
+https://ljohanaalvarez.github.io/BOG001-card-validation/
+
 ***
 
 ## Investigación UX
